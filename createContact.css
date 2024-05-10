@@ -42,7 +42,8 @@ body{
 }
 .btn_burger:hover{
     border-radius: 40px;
-    filter: drop-shadow(1px 1px 1px);
+    filter: drop-shadow(0.5px 0.5px 0.5px);
+    background-color: #d8d8d8;
 }
 .header_contact{
     font-size: 30px;
@@ -120,133 +121,42 @@ strong:hover{
     display: flex;
 }
 .main{
-    display: flex;
-    flex-direction: column;
     width: 100%;
     border-radius: 20px;
-    padding:0 0 0 15px;
+    padding:25px 0 0 20px;
     height: 50rem;
-    background:url("./logo/emptycontacts_animation_cell4.png")center/cover no-repeat;
     background-color: white;
-    background-size: 300px;
 }
-.contact_title{
-    width: 120px;
+.profil{
+ display: flex;
 }
-.contact_title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.profil_contact{
+    padding: 40px;
+    height: 200px;
 }
-.contact_title{
-    padding: 0
+.fa-solid.fa-arrow-left{
+    font-size: 20px;
 }
-.contact_title div{
-height: 45px;
-width: 45px;
-border-radius: 30px;
-background-color: blueviolet;
-}
-.letters{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 25px;
-}
-.contact_info{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-}
-.contact_info ul{
-    list-style: none;
-}
-.main_contact{
-    font-size: 30px;
-}
-.email{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    height: 321px;
-}
-.email_contact{
-    padding:0
-}
-.titles{
-    border-bottom: 1px solid #8e8d8d;
-}
-.titles ul{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-}
-.tel_number{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    height: 321px;
-}
-.number_contact{
-    padding: 0;
-}
-.role{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    height: 321px;
-}
-.role_contact{
-    padding: 0;
-}
-.modifier_contact{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    height: 321px;
-}
-.modifier_contact{
-    padding: 0;
-}
-.modifier{
-    background-color: rgb(230, 230, 230);
-    border-radius: 5px;
-    border: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------MediaQueries-----------------------*/
-@media screen and (max-width:1024px){
-
-    /*-----------------------Header-----------------------*/
-    .search_bar{
-        
-    }
-    .input_bar{
-        background-color: #e9e8e8;
-    }
-    .input_bar input{
-       display: none;
-  }
-  /*-----------------------Main-------------------*/
-
-  .menu_burger{
+.add_contact{
     position: absolute;
-    left: -100%;
-  }
+    margin: 200px 0 0 200px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: 5px solid#ffffff;
+    background-color: #3e58b8;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.input_contact{
+    display: grid;
+    grid-template-columns: repeat;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.name_input{
+    display: grid;
+    grid-template-columns: repeat;
+    grid-gap: px;
 }
