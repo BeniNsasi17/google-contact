@@ -10,3 +10,9 @@ btn.addEventListener("click", function () {
     }
     open = !open
 })
+
+const showList = document.querySelector(".contactList")
+
+showList.addEventListener("click", function () {
+    create
+})
