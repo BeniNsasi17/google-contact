@@ -3,6 +3,7 @@ body {
 }
 
 /*-------------------------------------------------HEADEAR----------------------------------------------*/
+
 .logo_contact {
   height: 70px;
 }
@@ -65,6 +66,8 @@ body {
   border: none;
   cursor: pointer;
   transition: 400ms, 400ms;
+  /*transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 0.27s 0ms cubic-bezier(0, 0, 0.2, 1);*/
 }
 .create_contact:hover {
   color: black;
@@ -254,12 +257,12 @@ strong:hover {
   height: 30px;
   background: white;
 }
-.save{
-height: 40px;
-border-radius: 30px;
-width: 150px;
-border: none;
-margin-top: 10px;
+.save {
+  height: 40px;
+  border-radius: 30px;
+  width: 150px;
+  border: none;
+  margin-top: 10px;
 }
 .fa-solid.fa-arrow-left {
   font-size: 20px;
@@ -270,7 +273,7 @@ margin-top: 10px;
   border-radius: 50px;
   height: 50px;
   width: 50px;
-  border:5px solid#ffffff;
+  border: 5px solid#ffffff;
   background-color: #3e58b8;
   font-size: 30px;
   color: white;
