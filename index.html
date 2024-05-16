@@ -53,6 +53,9 @@
 
    <section class="main">
       <p class="main_contact">contacts (0)</p>
+      <div class="newContact">
+
+      </div>
     <!--<div class="titles">
           <ul>
             <p>Titre</p>
@@ -164,37 +167,39 @@
     </div> --> 
     </section>
   
-    <section class="save_contacts">
+    <form class="save_contacts">
       <div class="profil">
           <i class="fa-solid fa-arrow-left" id="arrow-left"></i>
               <img class="profil_contact" src="./logo/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png" alt="" >  
-              <button class="add_contact" >+</button> 
-              <button class="save">Enregistrer</button>  
+              <p class="add_contact" >+</p> 
+              <button class="save">enregistrer</button> 
       </div>
-      <div class="button_container"><button class="create_libellés"><strong class="plus">+</strong>libellé</button></div>
-      
+      <div class="button_container"><p class="create_libellés"><strong class="plus">+</strong>libellé</p></div>
+
       <div class="inputs_container">
+        
        <div class="name_input">
-         <label for="Prénom"><i class="fa-regular fa-user"></i><input type="text" name="name" id="name" placeholder="Prénom" size="40"></label>
-         <label for="Nom"><i class="fa-regular fa-user"></i><input type="text" name="name" id="name" placeholder="Nom" size="40"></label>
+         <label for="Prénom"><i class="fa-regular fa-user"></i><input type="text" name="name" id="name" placeholder="Prénom" size="40" class="input" required></label>
+         <label for="Nom"><i class="fa-regular fa-user"></i><input type="text" name="name" id="name" placeholder="Nom" size="40" class="input" required></label>
        </div>
 
        <div class="role_input">
-          <label for="Entreprise"><i class="fa-solid fa-city"></i><input type="text" name="Entreprise" id="name" placeholder="Entreprise" size="40"></label> 
-         <label for="Fonction"><i class="fa-solid fa-city"></i><input type="text" name="Fonction" id="name" placeholder="Fonction"></label>
+          <label for="Entreprise"><i class="fa-solid fa-city"></i><input type="text" name="Entreprise" id="role" placeholder="Entreprise" size="40" class="input" required></label> 
+         <label for="Fonction"><i class="fa-solid fa-city"></i><input type="text" name="Fonction" id="role" placeholder="Fonction" class="input" required></label>
        </div>
 
       <div class="email_container">
-          <label for="email"><i class="fa-sharp fa-regular fa-envelope"></i><input type="email" name="email" id="email"></label>
-          <button class="add_mail">+ Ajouter une adresse e-mail</button>
+          <label for="email"><i class="fa-sharp fa-regular fa-envelope"></i><input type="email" name="email" id="email" class="input" required></label>
+          <button type="button" class="add_mail">+ Ajouter une adresse e-mail</button>
       </div>
 
 
       <div class="number">
-          <label for="tel"><i class="fa-solid fa-phone"></i><input type="tel" name="tel" id="tel"></label>
+          <label for="tel"><i class="fa-solid fa-phone"></i><input type="tel" name="tel" id="tel" class="input" required></label>
       </div>
-  </div>
-    </section>
+    </div>
+  <P class="erreur" id="erreur"></P>
+  </form>
   <script src="./index.js"></script>
   </body>
 </html>

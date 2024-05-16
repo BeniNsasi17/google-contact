@@ -17,7 +17,6 @@ backIcon.addEventListener("click", function () {
    history.back()
 })
 
-
 const createContactBtn = document.querySelector(".create_contact")
 const menuContact = document.querySelector(".main")
 const saveContact = document.querySelector(".save_contacts")
@@ -26,11 +25,16 @@ createContactBtn.addEventListener("click", function () {
    menuContact.style.display = "none"
    saveContact.style.display = "block"
 })
+saveContact.addEventListener("submit", function (e) {
+    e.preventDefault()
+})
 
 const contactList = document.querySelector(".contactList")
 
 contactList.addEventListener("click", function () {
-    self.location = "./index.html"
+    //self.location = "./index.html"
+    saveContact.style.display = "none"
+    menuContact.style.display = "flex"
 })
 
 const indicator = document.querySelector(".navIndicator")
@@ -55,10 +59,31 @@ items.forEach((item, index) => {
     item.classList.contains('active') && handleIndicator(item)
 });
 
+const saveInfoBtn = document.querySelector(".save")
+const inputs = document.querySelectorAll(".input")
 
-const Contact = dcreateElement('div',{
-    className: "newContact"
+saveInfoBtn.addEventListener("click", function (e) {
+    let erreur;
+
+    for (let i = 0; i < inputs.length; i++) {
+      if (!inputs[i].value) {
+        erreur = "veuillez renseigner tous les champs"
+     }else{
+        alert ("le formulaire est envoyé !")
+    }
+ }
+
+   if (erreur) {
+    document.querySelector("#erreur").innerHTML = erreur
+    } 
+
+    if (inputs["email"].value != "ddd") {
+        erreur = "adresse mail incorrecte"
+    }
 })
+
+
+
 
 
 
